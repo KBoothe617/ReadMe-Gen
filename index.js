@@ -65,7 +65,16 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.createPromptModule(questions).then((answers) => {
+        if (answers.license === 'None') {
+            answers.license = '';
+        }
+
+        const markdown = generateMarkdown(answers);
+        writeToFile('README.md', markdown);
+    });
+};
 
 // Function call to initialize app
 init();
