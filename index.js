@@ -30,6 +30,11 @@ const questions = [
         name: 'license',
         message: 'Please select a license.',
         choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please provide contribution guidelines.',
     }
 ];
 
