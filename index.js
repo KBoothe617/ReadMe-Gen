@@ -50,11 +50,19 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'Enter your email address.',
-    }
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            console.log('Error writing file', err);
+        } else {
+            console.log('File created successfully');
+        }
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
