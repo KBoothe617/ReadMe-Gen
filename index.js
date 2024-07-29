@@ -17,6 +17,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'table',
+        message: 'Please provide a table of contents.',
+    },
+    {
+        type: 'input',
         name: 'installation',
         message: 'Please provide installation instructions.',
     },
