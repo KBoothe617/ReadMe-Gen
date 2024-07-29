@@ -24,6 +24,12 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Please provide usage information.',
+    },
+    {
+        type: 'input',
+        name: 'license',
+        message: 'Please select a license.',
+        choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
     }
 ];
 
