@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown');
-const { type } = require('os');
+import inquirer from 'inquirer';
+import fs from 'fs';
+import generateMarkdown from './utils/generateMarkdown.js';
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -66,7 +65,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((answers) => {
+    inquirer.prompt(questions).then((answers) => {
         if (answers.license === 'None') {
             answers.license = '';
         }
