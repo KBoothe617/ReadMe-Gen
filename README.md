@@ -18,6 +18,10 @@
   ## Usage
   node index.js in git bash
   
+  <video width="640" height="480" controls>
+  <source src="./media/ReadMe Gen test video.mp4" type="video/mp4">
+  </video>
+
 
   ## Contributing
   
