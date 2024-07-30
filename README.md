@@ -1,9 +1,8 @@
 # ReadMe Gen
-
   
 
   ## Description
-  A program that will generate a ReadMe markdown for any project
+  A program that generates a readme markdown for any project
 
   ## Table of Contents
   - [Installation](#installation)
@@ -14,18 +13,17 @@
   - [Questions](#questions)
 
   ## Installation
-  You will need Node and use the commands npm install inquirer
+  npm install inquirer is needed
 
   ## Usage
-  node index.js
-
+  node index.js in git bash
   
 
   ## Contributing
   
 
   ## Tests
-  
+  npm test
 
   ## Questions
   If you have any questions, please reach out to me at [kboothe617@gmail.com](mailto:kboothe617@gmail.com). You can also find me on GitHub at [KBoothe617](https://github.com/KBoothe617).
